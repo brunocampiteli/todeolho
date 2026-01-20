@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      DATABASE_URL: ${localhost}
+      DATABASE_URL: localhost
       ROBOT_HEADLESS: "true"
       ROBOT_TIMEOUT_MS: "25000"
       NODE_ENV: production
@@ -50,5 +50,6 @@ volumes:
 networks:
   internal:
     driver: bridge
+
 
 
