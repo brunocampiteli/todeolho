@@ -1,5 +1,7 @@
 import { db } from '@/lib/db';
 
+export const dynamic = 'force-dynamic';
+
 export default async function VideosPage({ params }: { params: { searchId: string } }) {
   const searchId = Number(params.searchId);
   const pool = db();
